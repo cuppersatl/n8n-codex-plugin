@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "n8n-readonly": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "./scripts/n8n_mcp_server.py"
+      ],
+      "env": {
+        "N8N_BASE_URL": "${N8N_BASE_URL}",
+        "N8N_API_KEY": "${N8N_API_KEY}",
+        "N8N_API_VERSION": "${N8N_API_VERSION}",
+        "N8N_BACKUP_DIR": "${N8N_BACKUP_DIR}"
+      },
+      "note": "Local n8n MCP server for workflow discovery, full JSON updates, and local workflow backups."
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "n8n",
+  "version": "0.2.0",
+  "description": "Codex plugin for exploring n8n workflows, reviewing executions, and applying full workflow JSON updates with local backups.",
+  "author": {
+    "name": "[Your Name]",
+    "email": "author@example.com",
+    "url": "https://github.com/your-org/your-plugin-repo"
+  },
+  "homepage": "https://docs.n8n.io/api/",
+  "repository": "https://github.com/your-org/your-plugin-repo",
+  "license": "MIT",
+  "keywords": [
+    "n8n",
+    "automation"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks.json",
+  "mcpServers": "./.mcp.json",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "n8n",
+    "shortDescription": "Inspect, back up, and update n8n workflows from Codex.",
+    "longDescription": "Connect Codex to an n8n instance through a local MCP server so you can discover workflows, inspect workflow details, review execution history, apply full workflow JSON updates, and keep local rollback backups before each change.",
+    "developerName": "[Your Team]",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://n8n.io/",
+    "privacyPolicyURL": "https://n8n.io/legal/privacy/",
+    "termsOfServiceURL": "https://n8n.io/legal/terms/",
+    "defaultPrompt": [
+      "List my active n8n workflows.",
+      "Show recent failed n8n executions.",
+      "Replace workflow 123 with this JSON and keep a backup."
+    ],
+    "brandColor": "#EA4B71",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.svg",
+    "screenshots": [
+      "./assets/screenshot1.png",
+      "./assets/screenshot2.png",
+      "./assets/screenshot3.png"
+    ]
+  }
+}
